@@ -42,7 +42,6 @@ class xylo extends StatelessWidget {
              playit(color: Colors.teal, soundNumber:5),
              playit(color: Colors.blue, soundNumber:6),
              playit(color: Colors.purple, soundNumber:7),
-
             ],
           ),
         ),
