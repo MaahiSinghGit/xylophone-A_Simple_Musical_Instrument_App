@@ -12,80 +12,37 @@ class xylo extends StatelessWidget {
     final player = AudioCache();
     player.play('note$soundNumber.wav');
   }
+  Expanded playit({required Color color, required int soundNumber}) {
+  return  Expanded(
+  child: FlatButton(
+  color: color,
+  onPressed: () {
+  playsound(soundNumber);
+  },
+  child: Text("")
+  ),
+  );
+}
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
-
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children:
-            [ 
-              Expanded(
-                child: FlatButton(
-                  color: Colors.red,
-                  onPressed: () {
-                    playsound(1);
-                  },
-                  child: Text(""),
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  color: Colors.orange,
-                  onPressed: () {
-                    playsound(2);
-                  },
-                  child: Text(" "),
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  color: Colors.yellow,
-                  onPressed: () {
-                    playsound(3);
-                  },
-                  child: Text(" "),
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  color: Colors.green,
-                  onPressed: () {
-                    playsound(4);
-                  },
-                  child: Text(" "),
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  color: Colors.teal,
-                  onPressed: () {
-                    playsound(5);
-                  },
-                  child: Text(" "),
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  color: Colors.blue,
-                  onPressed: () {
-                    playsound(6);
-                  },
-                  child: Text(" "),
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  color: Colors.purple,
-                  onPressed: () {
-                    playsound(7);
-                  },
-                  child: Text(" "),
-                ),
-              ),
+            [
+              playit(color: Colors.red, soundNumber: 1),
+              playit(color: Colors.orange, soundNumber:2),
+             playit(color: Colors.yellow, soundNumber:3),
+             playit(color: Colors.green, soundNumber:4),
+             playit(color: Colors.teal, soundNumber:5),
+             playit(color: Colors.blue, soundNumber:6),
+             playit(color: Colors.purple, soundNumber:7),
+
             ],
           ),
         ),
