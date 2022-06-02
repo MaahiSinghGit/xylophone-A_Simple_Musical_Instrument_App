@@ -20,7 +20,9 @@ class xylo extends StatelessWidget {
         backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
-            children: [
+
+            children:
+            [ 
               Expanded(
                 child: FlatButton(
                   color: Colors.red,
@@ -30,47 +32,59 @@ class xylo extends StatelessWidget {
                   child: Text(""),
                 ),
               ),
-              FlatButton(
-                color: Colors.orange,
-                onPressed: () {
-                  playsound(2);
-                },
-                child: Text(" "),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.orange,
+                  onPressed: () {
+                    playsound(2);
+                  },
+                  child: Text(" "),
+                ),
               ),
-              FlatButton(
-                color: Colors.yellow,
-                onPressed: () {
-                  playsound(3);
-                },
-                child: Text(" "),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.yellow,
+                  onPressed: () {
+                    playsound(3);
+                  },
+                  child: Text(" "),
+                ),
               ),
-              FlatButton(
-                color: Colors.green,
-                onPressed: () {
-                  playsound(4);
-                },
-                child: Text(" "),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.green,
+                  onPressed: () {
+                    playsound(4);
+                  },
+                  child: Text(" "),
+                ),
               ),
-              FlatButton(
-                color: Colors.teal,
-                onPressed: () {
-                  playsound(5);
-                },
-                child: Text(" "),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.teal,
+                  onPressed: () {
+                    playsound(5);
+                  },
+                  child: Text(" "),
+                ),
               ),
-              FlatButton(
-                color: Colors.blue,
-                onPressed: () {
-                  playsound(6);
-                },
-                child: Text(" "),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.blue,
+                  onPressed: () {
+                    playsound(6);
+                  },
+                  child: Text(" "),
+                ),
               ),
-              FlatButton(
-                color: Colors.purple,
-                onPressed: () {
-                  playsound(7);
-                },
-                child: Text(" "),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.purple,
+                  onPressed: () {
+                    playsound(7);
+                  },
+                  child: Text(" "),
+                ),
               ),
             ],
           ),
